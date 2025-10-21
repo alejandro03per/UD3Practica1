@@ -10,5 +10,6 @@ public class Main {
 
        long resultado = NumerosImpares.productoDiezPrimerosImpares();
         System.out.println("El producto de los 10 primeros números impares es: " + resultado);
+
     }
     }
