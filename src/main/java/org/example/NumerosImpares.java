@@ -1,21 +1,22 @@
 package org.example;
 
-import java.util.Scanner;
 
 public class NumerosImpares {
-    public static long productoDiezPrimerosImpares(){
+    public long productoDiezPrimerosImpares(){
 
 
-        int producto = 1;
-        int numeroImpar = 0;
-        long resultado = 1;
+        long producto = 1;
+        int contador = 0;
+        long numero = 1;
 
-        while (producto < 10) {
-            if (producto % 2 != 0) {
-                producto *= resultado;
-                numeroImpar++;
+        System.out.println("Los primeros 10 numero impares: ");
+        while (contador < 10) {
+            if (numero % 2 != 0) {
+                System.out.println(numero);
+                producto *= numero;
+                contador++;
             }
-            resultado += 2;
+            numero += 2;
         }
         return producto;
 
