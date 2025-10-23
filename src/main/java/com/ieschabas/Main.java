@@ -1,21 +1,23 @@
 package com.ieschabas;
+import java.util.Scanner;
 
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        /**
-         //Ejercicio 1
-        //System.out.println();
-        //MenuVehiculos menuVehiculos = new MenuVehiculos();
+        Scanner scanner = new Scanner(System.in);
 
-        //System.out.println(menuVehiculos.seleccionarOpcion(1));
+        //Ejercicio 1
+        System.out.println();
+        MenuVehiculos menuVehiculos = new MenuVehiculos();
+
+        System.out.println(menuVehiculos.seleccionarOpcion(1));
 
         //Ejercicio 2
-        // NumerosImpares calculadora = new NumerosImpares();
-        // long resultado = calculadora.productoDiezPrimerosImpares();
+        NumerosImpares calculadora = new NumerosImpares();
+        long resultado = calculadora.productoDiezPrimerosImpares();
 
-        // System.out.println(" El producto de los 10 primeros números impares es: " + resultado);
+        System.out.println(" El producto de los 10 primeros números impares es: " + resultado);
 
         //Ejercicio 3
         Random random = new Random();
@@ -23,16 +25,16 @@ public class Main {
         int[] intentos = {0}; // Arreglo para contar intentos, inicializado en 0
 
         JuegoAdivinar juego = new JuegoAdivinar();
-        int resultado = juego.jugar(secreto, intentos);
+        int resultado1 = juego.jugar(secreto, intentos);
 
-        if (resultado == -1) {
+        if (resultado1 == -1) {
             System.out.println("Te has rendido. El número secreto era: " + secreto);
         } else {
-            System.out.println("¡Ganaste en " + resultado + " intentos!");
+            System.out.println("¡Ganaste en " + resultado1 + " intentos!");
         }
 
         //Ejercicio 4
-        Scanner scanner = new Scanner(System.in); // Para leer el límite
+
         Random rng = new Random(); // Para generar números aleatorios
 
         // Pedimos al usuario que ingrese el límite
@@ -43,13 +45,13 @@ public class Main {
         AleatoriosPar generador = new AleatoriosPar();
 
         // Llamamos al método para obtener un número par aleatorio
-        int resultado = generador.parAleatorioMenorQue(limite, rng);
+        int resultado4 = generador.parAleatorioMenorQue(limite, rng);
 
         // Mostramos el resultado
-        System.out.println("Número par aleatorio menor que " + limite + ": " + resultado);
+        System.out.println("Número par aleatorio menor que " + limite + ": " + resultado1);
 
         //Ejercicio 5
-        scanner.close(); // Cerramos el scanner
+
 
         SumasAleatorias sumas = new SumasAleatorias();
 
@@ -64,7 +66,7 @@ public class Main {
 
 
         //Ejercicio 6
-        Scanner scanner = new Scanner(System.in);
+
         Circunferencia circunferencia = new Circunferencia();
         double radio;
 
@@ -87,10 +89,10 @@ public class Main {
         double longitud = circunferencia.longitud(radio);
         System.out.println("La longitud de la circunferencia es: " + longitud);
 
-        scanner.close();
+
 
         //Ejercicio 7
-        Scanner scanner = new Scanner(System.in);
+
         Mayores mayores = new Mayores();
 
         // Pedir dos números al usuario
@@ -103,37 +105,35 @@ public class Main {
         int mayor = mayores.max2(numero1, numero2);
         System.out.println("El " +  mayor + " es el mayor");
 
-        scanner.close();
+
 
         //Ejercicio 8
-        Random rng = new Random();
-        MayoresAleatorios3 mayores = new MayoresAleatorios3();
+        Random rng1 = new Random();
+        MayoresAleatorios3 mayores1 = new MayoresAleatorios3();
 
         // Generar los máximos para 20 repeticiones
         System.out.println("Calculando el mayor de tres números aleatorios 20 veces:");
-        int[] resultados = mayores.generarMaximos3(20, rng);
+        int[] resultados3 = mayores1.generarMaximos3(20, rng1);
 
         // Mostrar los resultados
         System.out.println("\nResultados de los mayores:");
-        for (int i = 0; i < resultados.length; i++) {
-            System.out.println("Máximo " + (i + 1) + ": " + resultados[i]);
+        for (int i = 0; i < resultados3.length; i++) {
+            System.out.println("Máximo " + (i + 1) + ": " + resultados3[i]);
         }
- */
+
         //Ejercicio 9
-        Random rng = new Random();
-        MayoresAleatorios4 mayores = new MayoresAleatorios4();
+        Random rng2 = new Random();
+        MayoresAleatorios4 mayores2 = new MayoresAleatorios4();
 
         // Generar los máximos para 20 repeticiones
         System.out.println("Calculando el mayor de cuatro números aleatorios 20 veces:");
-        int[] resultados = mayores.generarMaximos4(20, rng);
+        int[] resultados4 = mayores2.generarMaximos4(20, rng2);
 
         // Mostrar los resultados
         System.out.println("\nResultados de los mayores:");
-        for (int i = 0; i < resultados.length; i++) {
-            System.out.println("Máximo " + (i + 1) + ": " + resultados[i]);
+        for (int i = 0; i < resultados4.length; i++) {
+            System.out.println("Máximo " + (i + 1) + ": " + resultados4[i]);
         }
-
-
     }
 }
 
