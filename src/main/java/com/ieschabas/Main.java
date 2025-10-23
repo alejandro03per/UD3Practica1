@@ -1,6 +1,5 @@
-package org.example;
+package com.ieschabas;
 
-import java.util.Scanner;
 import java.util.Random;
 
 public class Main {

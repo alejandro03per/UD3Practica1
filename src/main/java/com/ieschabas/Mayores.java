@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 
 public class Mayores {
     // Método que devuelve el mayor de dos números

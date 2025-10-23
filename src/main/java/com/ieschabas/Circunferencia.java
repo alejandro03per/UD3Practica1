@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 
 public class Circunferencia {
     // Método que calcula el área: π * radio^2

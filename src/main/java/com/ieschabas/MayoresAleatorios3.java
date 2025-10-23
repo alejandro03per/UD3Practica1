@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 import java.util.Random;
 
 public class MayoresAleatorios3 {

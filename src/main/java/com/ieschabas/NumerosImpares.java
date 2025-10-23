@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 
 
 public class NumerosImpares {
