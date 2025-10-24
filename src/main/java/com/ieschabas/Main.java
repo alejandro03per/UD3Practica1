@@ -4,27 +4,27 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) { // Declara la clase pública Main
+        Scanner scanner = new Scanner(System.in); // Crea un objeto Scanner
 
         //Ejercicio 1
         System.out.println("Ejercicio 1.............................................................................");
-        MenuVehiculos menuVehiculos = new MenuVehiculos();
+        MenuVehiculos menuVehiculos = new MenuVehiculos();// Crea una instancia de la clase MenuVehiculos
 
-        System.out.println(menuVehiculos.seleccionarOpcion(1));
+        System.out.println(menuVehiculos.seleccionarOpcion(1));// Llama al método seleccionarOpcion de MenuVehiculos
 
         //Ejercicio 2
         System.out.println("Ejercicio 2.............................................................................");
 
-        NumerosImpares calculadora = new NumerosImpares();
-        long resultado = calculadora.productoDiezPrimerosImpares();
+        NumerosImpares calculadora = new NumerosImpares(); // Crea una instancia de la clase NumerosImpares
+        long resultado = calculadora.productoDiezPrimerosImpares(); // Llama al método productoDiezPrimerosImpares
 
-        System.out.println(" El producto de los 10 primeros números impares es: " + resultado);
+        System.out.println(" El producto de los 10 primeros números impares es: " + resultado); // Imprime el resultado del cálculo
 
         //Ejercicio 3
         System.out.println("Ejercicio 3.............................................................................");
 
-        Random random = new Random();
+        Random random = new Random(); // Crea un objeto Random para generar números
         int secreto = random.nextInt(10) + 1; // Número secreto entre 1 y 100
         int[] intentos = {0}; // Arreglo para contar intentos, inicializado en 0
 
@@ -59,10 +59,10 @@ public class Main {
         System.out.println("Ejercicio 5.............................................................................");
 
 
-        SumasAleatorias sumas = new SumasAleatorias();
+        SumasAleatorias sumas = new SumasAleatorias(); // Crea una instancia de la clase SumasAleatorias
 
         // Generar las 20 sumas
-        int[] resultados = sumas.generarSumas();
+        int[] resultados = sumas.generarSumas(); // Llama al método generarSumas
 
         // Mostrar los resultados
         System.out.println("Resultados de las sumas: ");
@@ -74,8 +74,8 @@ public class Main {
         //Ejercicio 6
         System.out.println("Ejercicio 6.............................................................................");
 
-        Circunferencia circunferencia = new Circunferencia();
-        double radio;
+        Circunferencia circunferencia = new Circunferencia(); // Crea una instancia de la clase Circunferencia
+        double radio; // Declara una variable radio
 
         // Pedir el radio al usuario
         System.out.println("Inserte el radio de la circunferencia:");
@@ -101,7 +101,7 @@ public class Main {
         //Ejercicio 7
         System.out.println("Ejercicio 7.............................................................................");
 
-        Mayores mayores = new Mayores();
+        Mayores mayores = new Mayores(); // Crea una instancia de la clase Mayores
 
         // Pedir dos números al usuario
         System.out.println("Dime el primer número:");
@@ -118,8 +118,8 @@ public class Main {
         //Ejercicio 8
         System.out.println("Ejercicio 8.............................................................................");
 
-        Random rng1 = new Random();
-        MayoresAleatorios3 mayores1 = new MayoresAleatorios3();
+        Random rng1 = new Random(); // Crea un objeto Random para generar números aleatorios
+        MayoresAleatorios3 mayores1 = new MayoresAleatorios3(); // Crea una instancia de la clase MayoresAleatorios3
 
         // Generar los máximos para 20 repeticiones
         System.out.println("Calculando el mayor de tres números aleatorios 20 veces:");
@@ -134,8 +134,8 @@ public class Main {
         //Ejercicio 9
         System.out.println("Ejercicio 9.............................................................................");
 
-        Random rng2 = new Random();
-        MayoresAleatorios4 mayores2 = new MayoresAleatorios4();
+        Random rng2 = new Random(); // Crea un objeto Random para generar números aleatorios
+        MayoresAleatorios4 mayores2 = new MayoresAleatorios4(); // Crea una instancia de la clase MayoresAleatorios4
 
         // Generar los máximos para 20 repeticiones
         System.out.println("Calculando el mayor de cuatro números aleatorios 20 veces:");
@@ -145,6 +145,8 @@ public class Main {
         System.out.println("\nResultados de los mayores:");
         for (int i = 0; i < resultados4.length; i++) {
             System.out.println("Máximo " + (i + 1) + ": " + resultados4[i]);
+
+
         }
     }
 }
