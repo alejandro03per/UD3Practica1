@@ -97,7 +97,6 @@ public class Main {
         System.out.println("La longitud de la circunferencia es: " + longitud);
 
 
-
         //Ejercicio 7
         System.out.println("Ejercicio 7.............................................................................");
 
@@ -112,7 +111,6 @@ public class Main {
         // Calcular y mostrar el mayor
         int mayor = mayores.max2(numero1, numero2);
         System.out.println("El " +  mayor + " es el mayor");
-
 
 
         //Ejercicio 8
@@ -145,7 +143,6 @@ public class Main {
         System.out.println("\nResultados de los mayores:");
         for (int i = 0; i < resultados4.length; i++) {
             System.out.println("Máximo " + (i + 1) + ": " + resultados4[i]);
-
 
         }
     }
