@@ -2,6 +2,12 @@ package com.ieschabas;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Programa que obtiene un número par aleatorio menor que el que el usuario introduzca.
+ * @author Alejandro.
+ * @version 1.0.
+ */
+
 public class AleatoriosPar {
     public int parAleatorioMenorQue(int limite, Random rng) {
         Scanner scanner = new Scanner(System.in); // Para leer input del usuario
@@ -14,7 +20,7 @@ public class AleatoriosPar {
 
         int maximoPar;
         if (limite % 2 == 0) { // Si el límite es par
-            maximoPar = limite - 2; // Ejemplo: si limite es 10, el par más grande es 8
+            maximoPar = limite - 1; // Ejemplo: si limite es 10, el par más grande es 8
         } else { // Si el límite es impar
             maximoPar = limite - 1; // Ejemplo: si limite es 9, el par más grande es 8
         }

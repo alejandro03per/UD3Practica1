@@ -1,5 +1,11 @@
 package com.ieschabas;
 
+/**
+ *programa que muestra el producto de los 10 primeros números impares.
+ * @author Alejandro
+ * @version 1.0
+ */
+
 
 public class NumerosImpares {
     public long productoDiezPrimerosImpares(){

@@ -1,5 +1,12 @@
 package com.ieschabas;
 
+/**
+ * Programa para calcula el área y la longitud de una circunferencia
+ *El usuario introduce el radio
+ * @author Alejandro
+ * @version 1.0
+ */
+
 public class Circunferencia {
     // Método que calcula el área: π * radio^2
     public double area(double radio) {

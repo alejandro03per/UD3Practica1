@@ -8,18 +8,22 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //Ejercicio 1
-        System.out.println();
+        System.out.println("Ejercicio 1.............................................................................");
         MenuVehiculos menuVehiculos = new MenuVehiculos();
 
         System.out.println(menuVehiculos.seleccionarOpcion(1));
 
         //Ejercicio 2
+        System.out.println("Ejercicio 2.............................................................................");
+
         NumerosImpares calculadora = new NumerosImpares();
         long resultado = calculadora.productoDiezPrimerosImpares();
 
         System.out.println(" El producto de los 10 primeros números impares es: " + resultado);
 
         //Ejercicio 3
+        System.out.println("Ejercicio 3.............................................................................");
+
         Random random = new Random();
         int secreto = random.nextInt(10) + 1; // Número secreto entre 1 y 100
         int[] intentos = {0}; // Arreglo para contar intentos, inicializado en 0
@@ -34,6 +38,7 @@ public class Main {
         }
 
         //Ejercicio 4
+        System.out.println("Ejercicio 4.............................................................................");
 
         Random rng = new Random(); // Para generar números aleatorios
 
@@ -48,9 +53,10 @@ public class Main {
         int resultado4 = generador.parAleatorioMenorQue(limite, rng);
 
         // Mostramos el resultado
-        System.out.println("Número par aleatorio menor que " + limite + ": " + resultado1);
+        System.out.println("Número par aleatorio menor que " + limite + ": " + resultado4);
 
         //Ejercicio 5
+        System.out.println("Ejercicio 5.............................................................................");
 
 
         SumasAleatorias sumas = new SumasAleatorias();
@@ -59,13 +65,14 @@ public class Main {
         int[] resultados = sumas.generarSumas();
 
         // Mostrar los resultados
-        System.out.println("20 sumas aleatorias: ");
+        System.out.println("Resultados de las sumas: ");
         for (int i = 0; i < resultados.length; i++) {
-            System.out.println("Suma " + (i + 1) + ": " + resultados[i]);
+            System.out.println("Resultado " + (i + 1) + ": " + resultados[i]);
         }
 
 
         //Ejercicio 6
+        System.out.println("Ejercicio 6.............................................................................");
 
         Circunferencia circunferencia = new Circunferencia();
         double radio;
@@ -92,6 +99,7 @@ public class Main {
 
 
         //Ejercicio 7
+        System.out.println("Ejercicio 7.............................................................................");
 
         Mayores mayores = new Mayores();
 
@@ -108,6 +116,8 @@ public class Main {
 
 
         //Ejercicio 8
+        System.out.println("Ejercicio 8.............................................................................");
+
         Random rng1 = new Random();
         MayoresAleatorios3 mayores1 = new MayoresAleatorios3();
 
@@ -122,6 +132,8 @@ public class Main {
         }
 
         //Ejercicio 9
+        System.out.println("Ejercicio 9.............................................................................");
+
         Random rng2 = new Random();
         MayoresAleatorios4 mayores2 = new MayoresAleatorios4();
 

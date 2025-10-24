@@ -1,6 +1,13 @@
 package com.ieschabas;
 import java.util.Random;
 
+/**
+ *programa que usa un algoritmo que devuelva el mayor de tres números aleatorios (entre 0 y 1000)
+ * El proceso se repite 20 veces
+ * @author Alejandro
+ * @version 1.0
+ */
+
 public class MayoresAleatorios3 {
     // Método que devuelve el mayor de tres números
     public int max3(int a, int b, int c) {

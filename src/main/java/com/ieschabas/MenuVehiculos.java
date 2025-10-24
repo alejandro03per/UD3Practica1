@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 
 public class MenuVehiculos {
-    public static String seleccionarOpcion(int opcion){
+    public String seleccionarOpcion(int opcion){
         //utilzo la función scanner
 
         Scanner scanner = new Scanner(System.in);

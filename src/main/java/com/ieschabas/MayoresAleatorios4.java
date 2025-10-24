@@ -1,6 +1,13 @@
 package com.ieschabas;
 import java.util.Random;
 
+/**
+ *programa que usa un algoritmo que devuelva el mayor de cuatro números aleatorios (entre 0 y 1000).
+ * El proceso se repite 20 veces.
+ * @author Alejandro
+ * @version 1.0
+ */
+
 public class MayoresAleatorios4 {
     // Método que devuelve el mayor de cuatro números
     public int max4(int a, int b, int c, int d) {
